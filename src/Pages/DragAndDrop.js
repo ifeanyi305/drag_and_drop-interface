@@ -104,46 +104,6 @@ const DragAndDrop = () => {
       </div>
     </DragDropContext>
   )
-
-  // const [items, setItems] = useState(initialItems);
-
-  // const onDragEnd = result => {
-  //   if (!result.destination) return;
-
-  //   const reorderedItems = Array.from(items);
-  //   const [removed] = reorderedItems.splice(result.source.index, 1);
-  //   reorderedItems.splice(result.destination.index, 0, removed);
-
-  //   setItems(reorderedItems);
-  // };
-
-  // return (
-  //   <DragDropContext onDragEnd={onDragEnd}>
-  //     <Droppable droppableId="droppable">
-  //       {(provided) => (
-  //         <div
-  //           ref={provided.innerRef}
-  //           {...provided.droppableProps}
-  //         >
-  //           {items.map((item, index) => (
-  //             <Draggable key={item.id} draggableId={item.id} index={index}>
-  //               {(provided) => (
-  //                 <div
-  //                   ref={provided.innerRef}
-  //                   {...provided.draggableProps}
-  //                   {...provided.dragHandleProps}
-  //                 >
-  //                   {item.content}
-  //                 </div>
-  //               )}
-  //             </Draggable>
-  //           ))}
-  //           {provided.placeholder}
-  //         </div>
-  //       )}
-  //     </Droppable>
-  //   </DragDropContext>
-  // );
 }
 
 export default DragAndDrop;
